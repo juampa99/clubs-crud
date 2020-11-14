@@ -1,0 +1,36 @@
+{
+  "name": "clubs-crud",
+  "version": "1.0.0",
+  "description": "clubs-crud for [r/ArgentinaPrograma](https://github.com/r-argentina-programa)",
+  "main": "index.js",
+  "dependencies": {
+    "@types/express-handlebars": "^3.1.0",
+    "@types/multer": "^1.4.4",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "handlebars": "^4.7.6",
+    "multer": "^1.4.2",
+    "typescript": "^4.0.5"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.8",
+    "@types/handlebars": "^4.1.0",
+    "nodemon": "^2.0.6",
+    "ts-node-dev": "^1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "nodemon": "./node_modules/nodemon/bin/nodemon.js index.js",
+    "tsc": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juampa99/clubs-crud.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/juampa99/clubs-crud/issues"
+  },
+  "homepage": "https://github.com/juampa99/clubs-crud#readme"
+}

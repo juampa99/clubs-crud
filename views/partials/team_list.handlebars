@@ -1,0 +1,15 @@
+<table>
+    {{#each teams as |team|}}
+        <tr>
+            <th> Team Name </th>
+            <th> Location </th>
+        </tr>
+        <tr>
+            <td><img src="{{team.crestUrl}}" id="crest">{{team.name}}</td>
+            <td>{{team.area.name}}</td>
+            <td>
+                <a href="/team/{{team.id}}"> Details </a>
+            </td>
+        </tr>
+    {{/each}}
+</table>

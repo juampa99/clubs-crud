@@ -1,0 +1,30 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+td{
+    border: 3px solid darkseagreen;
+}
+table{
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid darkseagreen;
+}
+#crest{
+    height: 50px;
+}
+
+#teamDetailsWrapper{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#teamDetailsWrapper > *{
+    border: 3px solid darkseagreen;
+}
+
+#teamDetailsWrapper > #title{
+    font-size: 50px;
+    font-weight: bolder;
+}
