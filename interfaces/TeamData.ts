@@ -9,7 +9,7 @@ interface TeamData{
     phone: string,
     website: string,
     email: string,
-    foundDate: number,
+    founded: number,
     clubColors: string,
     venue: string,
     lastUpdated: string

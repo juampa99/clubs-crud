@@ -105,3 +105,5 @@ dist
 
 # Custom
 *.js
+public/uploads/
+/data/teams (copy).json

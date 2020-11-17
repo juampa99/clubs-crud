@@ -22,6 +22,7 @@ table{
 
 #teamDetailsWrapper > *{
     border: 3px solid darkseagreen;
+    padding: 5px;
 }
 
 #teamDetailsWrapper > #title{

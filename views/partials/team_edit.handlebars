@@ -1,0 +1,36 @@
+<form method="POST" action="/submit-team/{{team.id}}" id="teamDetailsWrapper" enctype="multipart/form-data">
+    <input name="name" value="{{team.name}}" type="text" class="teamDetails" id="title">
+    <br>
+    <br>
+    <img name="image" src="{{team.crestUrl}}">
+    <br>
+    <input type="file" name="image">
+    <br>
+    <br>
+    <input name="address" value="{{team.address}}" type="text" class="teamDetails">
+    <br>
+    <br>
+    <input name="phone" value="{{team.phone}}" type="text" class="teamDetails">
+    <br>
+    <br>
+    <input name="email" value="{{team.email}}" type="text" class="teamDetails">
+    <br>
+    <br>
+    <input name="clubColors" value="{{team.clubColors}}" type="text" class="teamDetails">
+    <br>
+    <br>
+    <input name="foundDate" value="{{team.foundDate}}" type="text" class="teamDetails">
+    <br>
+    <br>
+    <input name="website" value="{{team.website}}" class="teamDetails">
+    <br>
+    <br>
+    <submit onclick="{{hello}}"> Edit </submit>
+    <input type="submit" value="Submit">
+</form>
+
+<!--<form method="post" action="/submit-team" enctype="application/x-www-form-urlencoded">
+    <label for="textt"></label>
+    <input name="textt" type="text">
+    <input type="submit" value="Submit">
+</form>-->

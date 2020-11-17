@@ -2,8 +2,8 @@ import {loadTeamData, saveTeamData} from "../api";
 import Team from "../entities/Team";
 import {mapTeam, unmapTeam} from "../mappers/teamMapper";
 
-function loadTeams() : Team[]{
-    const teamDataList = loadTeamData();
+function loadTeams(backup : boolean) : Team[]{
+    const teamDataList = loadTeamData(backup);
     const teamList = teamDataList.map(team=>mapTeam(team));
 
     return teamList;

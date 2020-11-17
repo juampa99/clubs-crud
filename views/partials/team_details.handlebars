@@ -1,21 +1,27 @@
 <div id="teamDetailsWrapper">
-    <span id="title">{{team.name}}</span>
+    <span class="teamDetails" for="name" id="title">{{team.name}}</span>
     <br>
     <br>
     <img src="{{team.crestUrl}}">
     <br>
     <br>
-    <span>{{team.address}}</span>
+    <span class="teamDetails">{{team.address}}</span>
     <br>
     <br>
-    <span>{{team.phone}}</span>
+    <span class="teamDetails">{{team.phone}}</span>
     <br>
     <br>
-    <span>{{team.email}}</span>
+    <span class="teamDetails">{{team.email}}</span>
     <br>
     <br>
-    <span>{{team.clubColors}}</span>
+    <span class="teamDetails">{{team.clubColors}}</span>
     <br>
     <br>
-    <a href="{{team.website}}">{{team.website}}</a>
+    <span class="teamDetails">{{team.foundDate}}</span>
+    <br>
+    <br>
+    <a class="teamDetails" href="{{team.website}}">{{team.website}}</a>
+    <br>
+    <br>
+    <a href="/team/{{team.id}}/edit"> Edit </a>
 </div>

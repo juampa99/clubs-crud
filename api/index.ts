@@ -1,16 +1,19 @@
 import fs from "fs";
-import Team from "../entities/Team";
-import {unmapTeam} from "../mappers/teamMapper";
 
-function loadTeamData(): TeamData[]{
-    const teams = fs.readFileSync('./data/teams.json', 'utf8');
+function loadTeamData(backup : boolean): TeamData[] {
+    let path = './data/';
+    if(backup)
+        path = path + 'teams_backup.json';
+    else
+        path = path + 'teams.json';
+
+    const teams = fs.readFileSync(path, 'utf8');
     return JSON.parse(teams);
 }
 
 function saveTeamData(teams: TeamData[]): void {
-    const teamListString = JSON.stringify(teams);
-    fs.writeFileSync('student-2.json', teamListString);
-
+    const teamListString = JSON.stringify(teams, null, '  ');
+    fs.writeFileSync('./data/teams.json', teamListString);
 }
 
 export { loadTeamData, saveTeamData }

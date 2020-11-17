@@ -12,7 +12,7 @@ function mapTeam(data : TeamData): Team{
         phone: data.phone,
         website: data.website,
         email: data.email,
-        founded: data.foundDate,
+        founded: data.founded,
         clubColors: data.clubColors,
         venue: data.venue,
         lastUpdated: data.lastUpdated
@@ -33,7 +33,7 @@ function unmapTeam(team: Team) : TeamData{
         clubColors: team.clubColors,
         crestUrl: team.crestUrl,
         email: team.email,
-        foundDate: team.foundDate,
+        founded: team.foundDate,
         lastUpdated: team.lastUpdated
     }
 }
