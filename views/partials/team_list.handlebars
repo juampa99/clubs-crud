@@ -1,14 +1,21 @@
-<table>
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col"> Crest </th>
+            <th scope="col"> Team Name </th>
+            <th scope="col"> Location </th>
+            <th scope="col"> Actions </th>
+        </tr>
+    </thead>
     {{#each teams as |team|}}
         <tr>
-            <th> Team Name </th>
-            <th> Location </th>
-        </tr>
-        <tr>
-            <td><img src="{{team.crestUrl}}" id="crest">{{team.name}}</td>
-            <td>{{team.area.name}}</td>
-            <td>
+            <td scope="col"><img src="{{team.crestUrl}}" id="crest"></td>
+            <td> {{team.name}} </td>
+            <td scope="col">{{team.area.name}}</td>
+            <td scope="col">
                 <a href="/team/{{team.id}}"> Details </a>
+                <br>
+                <a class="teamDetails" href="/delete/{{team.id}}"> Delete </a>
             </td>
         </tr>
     {{/each}}

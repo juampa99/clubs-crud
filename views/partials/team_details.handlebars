@@ -1,27 +1,53 @@
-<div id="teamDetailsWrapper">
-    <span class="teamDetails" for="name" id="title">{{team.name}}</span>
-    <br>
-    <br>
-    <img src="{{team.crestUrl}}">
-    <br>
-    <br>
-    <span class="teamDetails">{{team.address}}</span>
-    <br>
-    <br>
-    <span class="teamDetails">{{team.phone}}</span>
-    <br>
-    <br>
-    <span class="teamDetails">{{team.email}}</span>
-    <br>
-    <br>
-    <span class="teamDetails">{{team.clubColors}}</span>
-    <br>
-    <br>
-    <span class="teamDetails">{{team.foundDate}}</span>
-    <br>
-    <br>
-    <a class="teamDetails" href="{{team.website}}">{{team.website}}</a>
-    <br>
-    <br>
-    <a href="/team/{{team.id}}/edit"> Edit </a>
+<div class="container">
+    <div id="teamDetailsWrapper" class="p-3 mb-2 bg-dark text-white">
+        <div id="imageContainer" class="p-3 mb-2 bg-secondary text-white">
+            <img id="crestDetails" src="{{team.crestUrl}}">
+        </div>
+        <button id="editButtonDetails" class="btn btn-primary" onclick="location.href='/team/{{team.id}}/edit'"> Edit </button>
+        <div><span class="teamDetails" for="name" id="title">{{team.name}}</span></div>
+        <table class="table table-dark">
+            <tr>
+                <th> Address </th>
+            </tr>
+            <tr>
+                <td><span>{{team.address}}</span></td>
+            </tr>
+            <tr>
+                <th> Phone </th>
+            </tr>
+            <tr>
+                <td>{{team.phone}}</td>
+            </tr>
+            <tr>
+                <th> Email </th>
+            </tr>
+            <tr>
+                <td>{{team.email}}</td>
+            </tr>
+            <tr>
+                <th> Location </th>
+            </tr>
+            <tr>
+                <td>{{team.area.name}}</td>
+            </tr>
+            <tr>
+                <th> Club Colors </th>
+            </tr>
+            <tr>
+                <td>{{team.clubColors}}</td>
+            </tr>
+            <tr>
+                <th> Found Date </th>
+            </tr>
+            <tr>
+                <td>{{team.foundDate}}</td>
+            </tr>
+            <tr>
+                <th> Website </th>
+            </tr>
+            <tr>
+                <td><a class="teamDetails" href="{{team.website}}">{{team.website}}</a></td>
+            </tr>
+        </table>
+    </div>
 </div>

@@ -50,14 +50,23 @@ app.get('/team/:id', (req, res)=>{
 });
 
 app.get('/team/:id/edit', (req, res)=>{
-    let filteredTeams = teams.filter(t=>t.id == Number(req.params.id));
+    let id = req.params.id;
     let team = undefined;
-    if(filteredTeams != null && filteredTeams.length != 0)
-        team = filteredTeams[0];
-    else {
-        res.status(404).send('<h1 style="text-align: center;">404 Not found</h1>')
-        return;
+    if(id === 'new'){
+        let newId = teams[teams.length-1].id + 1;
+        team = new Team({id: newId});
+        teams.push(team);
     }
+    else{
+        let filteredTeams = teams.filter(t=>t.id == Number(id));
+        if(filteredTeams != null && filteredTeams.length != 0)
+            team = filteredTeams[0];
+        else {
+            res.status(404).send('<h1 style="text-align: center;">404 Not found</h1>')
+            return;
+        }
+    }
+
 
     res.render('team_edit', {
         layout: 'main_layout',
@@ -67,8 +76,19 @@ app.get('/team/:id/edit', (req, res)=>{
     })
 });
 
+app.get('/delete/:id', (req, res)=>{
+    teams.forEach((team, i)=> {
+        if (team.id == Number(req.params.id))
+            teams.splice(i, 1);
+    })
+    res.redirect('/');
+})
+
 app.post('/submit-team/:id', upload.single('image'), (req,res)=>{
     let team = teams.filter(t=>t.id == Number(req.params.id))[0];
+    if(!team.area)
+        team.area = {name: 'Team location', id: -1}
+    team.area.name = req.body.location
     Object.assign(team, req.body);
     if(req.file)
         team.crestUrl = '/uploads/images/'+req.file.filename

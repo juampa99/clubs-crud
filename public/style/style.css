@@ -1,31 +1,87 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
-td{
-    border: 3px solid darkseagreen;
-}
-table{
+
+.table{
     width:50%;
     margin-left: auto;
     margin-right: auto;
-    border: 3px solid darkseagreen;
-}
-#crest{
-    height: 50px;
+    box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.28);
 }
 
-#teamDetailsWrapper{
-    text-align: center;
-    margin-left: auto;
+#imageContainer{
+    box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.28);
     margin-right: auto;
+    margin-left: auto;
+    float:left;
+}
+
+#crest{
+    height: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    float:left;
+}
+
+#teamDetailsWrapper {
+    margin-top: 10px;
+    box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.28);
 }
 
 #teamDetailsWrapper > *{
-    border: 3px solid darkseagreen;
     padding: 5px;
 }
 
-#teamDetailsWrapper > #title{
+#teamDetailsWrapper > div{
+    display: flex;
+    align-content: center;
+}
+
+#teamDetailsWrapper > div > #title{
+    width: 100%;
     font-size: 50px;
     font-weight: bolder;
+    text-align: center;
+    vertical-align: middle;
 }
+
+#titleWrapperEdit{
+    display: flex;
+    align-content: center;
+}
+
+#teamDetailsWrapper > form > div > #title{
+    width: 100%;
+    margin-left: 15px;
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#myTable{
+    font-size: 20px;
+}
+
+#editButtonDetails{
+    float:right;
+}
+
+.editTable{
+    margin-top: 15px;
+}
+
+#crestDetails{
+    width: 300px;
+}
+
+#nav-sticky{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top:0;
+}
+
+ul{
+    list-style-type: none;
+}
+

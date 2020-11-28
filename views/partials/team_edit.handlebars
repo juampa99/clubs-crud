@@ -1,36 +1,58 @@
-<form method="POST" action="/submit-team/{{team.id}}" id="teamDetailsWrapper" enctype="multipart/form-data">
-    <input name="name" value="{{team.name}}" type="text" class="teamDetails" id="title">
-    <br>
-    <br>
-    <img name="image" src="{{team.crestUrl}}">
-    <br>
-    <input type="file" name="image">
-    <br>
-    <br>
-    <input name="address" value="{{team.address}}" type="text" class="teamDetails">
-    <br>
-    <br>
-    <input name="phone" value="{{team.phone}}" type="text" class="teamDetails">
-    <br>
-    <br>
-    <input name="email" value="{{team.email}}" type="text" class="teamDetails">
-    <br>
-    <br>
-    <input name="clubColors" value="{{team.clubColors}}" type="text" class="teamDetails">
-    <br>
-    <br>
-    <input name="foundDate" value="{{team.foundDate}}" type="text" class="teamDetails">
-    <br>
-    <br>
-    <input name="website" value="{{team.website}}" class="teamDetails">
-    <br>
-    <br>
-    <submit onclick="{{hello}}"> Edit </submit>
-    <input type="submit" value="Submit">
-</form>
+<div class="container">
+    <div id="teamDetailsWrapper" class="p-3 mb-2 bg-dark text-white">
+        <form method="POST" action="/submit-team/{{team.id}}" enctype="multipart/form-data">
+            <div id="imageContainer" class="p-3 mb-2 bg-secondary text-white">
+                <img id="crestDetails" src="{{team.crestUrl}}">
+                <br>
+                <input type="file" name="image">
+            </div>
+            <div id="titleWrapperEdit"><input name="name" value="{{team.name}}" type="text" class="teamDetails" id="title"></div>
 
-<!--<form method="post" action="/submit-team" enctype="application/x-www-form-urlencoded">
-    <label for="textt"></label>
-    <input name="textt" type="text">
-    <input type="submit" value="Submit">
-</form>-->
+            <table class="table table-dark editTable">
+                <tr>
+                    <th> Address </th>
+                </tr>
+                <tr>
+                    <td><input name="address" value="{{team.address}}" type="text" class="teamDetails"></td>
+                </tr>
+                <tr>
+                    <th> Phone </th>
+                </tr>
+                <tr>
+                    <td><input name="phone" value="{{team.phone}}" type="text" class="teamDetails"></td>
+                </tr>
+                <tr>
+                    <th> Email </th>
+                </tr>
+                <tr>
+                    <td><input name="email" value="{{team.email}}" type="text" class="teamDetails"></td>
+                </tr>
+                <tr>
+                    <th> Location </th>
+                </tr>
+                <tr>
+                    <td><input name="location" value="{{team.area.name}}" type="text" class="teamDetails"></td>
+                </tr>
+                <tr>
+                    <th> Club Colors </th>
+                </tr>
+                <tr>
+                    <td><input name="clubColors" value="{{team.clubColors}}" type="text" class="teamDetails"></td>
+                </tr>
+                <tr>
+                    <th> Found Date </th>
+                </tr>
+                <tr>
+                    <td><input name="foundDate" value="{{team.foundDate}}" type="text" class="teamDetails"></td>
+                </tr>
+                <tr>
+                    <th> Website </th>
+                </tr>
+                <tr>
+                    <td><input name="website" value="{{team.website}}" class="teamDetails"></td>
+                </tr>
+            </table>
+            <input class="btn btn-success" type="submit" value="Submit">
+        </form>
+    </div>
+</div>

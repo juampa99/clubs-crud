@@ -33,7 +33,7 @@
     },
     "clubColors": "Claret / Sky Blue",
     "crestUrl": "https://upload.wikimedia.org/wikipedia/de/9/9f/Aston_Villa_logo.svg",
-    "email": null,
+    "email": "no data",
     "founded": 1872,
     "lastUpdated": "2020-05-14T02:41:36Z"
   },
@@ -52,7 +52,7 @@
     },
     "clubColors": "Royal Blue / White",
     "crestUrl": "https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg",
-    "email": null,
+    "email": "no data",
     "founded": 1905,
     "lastUpdated": "2020-05-14T02:41:41Z"
   },
@@ -135,7 +135,7 @@
   {
     "id": 67,
     "name": "Newcastle United FC",
-    "phone": null,
+    "phone": "no data",
     "shortName": "Newcastle",
     "tla": "NEW",
     "venue": "St. James' Park",
@@ -154,7 +154,7 @@
   {
     "id": 68,
     "name": "Norwich City FC",
-    "phone": null,
+    "phone": "no data",
     "shortName": "Norwich",
     "tla": "NOR",
     "venue": "Carrow Road",
@@ -242,14 +242,14 @@
     },
     "clubColors": "Royal Blue / White",
     "crestUrl": "https://upload.wikimedia.org/wikipedia/en/2/2d/Leicester_City_crest.svg",
-    "email": null,
+    "email": "no data",
     "founded": 1884,
     "lastUpdated": "2020-05-14T02:42:16Z"
   },
   {
     "id": 340,
     "name": "Southampton FC",
-    "phone": null,
+    "phone": "no data",
     "shortName": "Southampton",
     "tla": "SOU",
     "venue": "St. Mary's Stadium",
@@ -268,7 +268,7 @@
   {
     "id": 346,
     "name": "Watford FC",
-    "phone": null,
+    "phone": "no data",
     "shortName": "Watford",
     "tla": "WAT",
     "venue": "Vicarage Road Stadium",
@@ -319,7 +319,7 @@
     "clubColors": "Red / White / Black",
     "crestUrl": "https://upload.wikimedia.org/wikipedia/en/9/9c/Sheffield_United_FC_logo.svg",
     "email": "info@sufc.co.uk",
-    "founded": null,
+    "founded": "no data",
     "lastUpdated": "2020-05-14T02:42:36Z"
   },
   {
@@ -378,5 +378,43 @@
     "email": "admin@afcb.co.uk",
     "founded": 1890,
     "lastUpdated": "2020-05-14T02:43:14Z"
+  },
+  {
+    "id": 1046,
+    "name": "Team Name",
+    "phone": "Team phone",
+    "shortName": "Team shortname",
+    "tla": "tla",
+    "venue": "Team venue",
+    "website": "https://placeholder.com/",
+    "address": "",
+    "area": {
+      "id": 0,
+      "name": "Team location"
+    },
+    "clubColors": "Team colors",
+    "crestUrl": "https://via.placeholder.com/300",
+    "email": "example@gmail.com",
+    "founded": 0,
+    "lastUpdated": "Data last updated.."
+  },
+  {
+    "id": 1047,
+    "name": "Team Name",
+    "phone": "Team phone",
+    "shortName": "Team shortname",
+    "tla": "tla",
+    "venue": "Team venue",
+    "website": "https://placeholder.com/",
+    "address": "",
+    "area": {
+      "id": 0,
+      "name": "Team location"
+    },
+    "clubColors": "Team colors",
+    "crestUrl": "https://via.placeholder.com/300",
+    "email": "example@gmail.com",
+    "founded": 0,
+    "lastUpdated": "Data last updated.."
   }
 ]

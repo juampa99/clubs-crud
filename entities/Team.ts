@@ -33,18 +33,18 @@ export default class Team{
                 }
     ) {
         this.id = teamData.id;
-        this.area = teamData.area;
-        this.name = teamData.name;
-        this.shortName = teamData.shortName;
-        this.tla = teamData.tla;
-        this.crestUrl = teamData.crestUrl;
-        this.address = teamData.address;
-        this.phone = teamData.phone;
-        this.website = teamData.website;
-        this.email = teamData.email;
-        this.foundDate = teamData.founded;
-        this.clubColors = teamData.clubColors;
-        this.venue = teamData.venue;
-        this.lastUpdated = teamData.lastUpdated;
+        this.area = teamData.area ? teamData.area : {name: 'Team location', id: 0};
+        this.name = teamData.name ? teamData.name : 'Team Name';
+        this.shortName = teamData.shortName ? teamData.shortName : 'Team shortname';
+        this.tla = teamData.tla ? teamData.tla : 'tla';
+        this.crestUrl = teamData.crestUrl ? teamData.crestUrl : 'https://via.placeholder.com/300';
+        this.address = teamData.address ? teamData.address : '';
+        this.phone = teamData.phone ? teamData.phone : 'Team phone';
+        this.website = teamData.website ? teamData.website : 'https://placeholder.com/';
+        this.email = teamData.email ? teamData.email : 'example@gmail.com';
+        this.foundDate = teamData.founded ? teamData.founded : 0;
+        this.clubColors = teamData.clubColors ? teamData.clubColors : 'Team colors';
+        this.venue = teamData.venue ? teamData.venue : 'Team venue';
+        this.lastUpdated = teamData.lastUpdated ? teamData.lastUpdated : 'Data last updated..';
     }
 }
