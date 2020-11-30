@@ -9,7 +9,7 @@
     "website": "http://www.arsenal.com",
     "address": "75 Drayton Park London N5 1BU",
     "area": {
-      "id": 2072,
+      "id": 0,
       "name": "England"
     },
     "clubColors": "Red / White",
@@ -17,44 +17,6 @@
     "email": "info@arsenal.co.uk",
     "founded": 1886,
     "lastUpdated": "2020-05-14T02:41:34Z"
-  },
-  {
-    "id": 58,
-    "name": "Aston Villa FC",
-    "phone": "+44 (0121) 3272299",
-    "shortName": "Aston Villa",
-    "tla": "AST",
-    "venue": "Villa Park",
-    "website": "http://www.avfc.co.uk",
-    "address": "Villa Park Birmingham B6 6HE",
-    "area": {
-      "id": 2072,
-      "name": "England"
-    },
-    "clubColors": "Claret / Sky Blue",
-    "crestUrl": "https://upload.wikimedia.org/wikipedia/de/9/9f/Aston_Villa_logo.svg",
-    "email": "no data",
-    "founded": 1872,
-    "lastUpdated": "2020-05-14T02:41:36Z"
-  },
-  {
-    "id": 61,
-    "name": "Chelsea FC",
-    "phone": "+44 (0871) 9841955",
-    "shortName": "Chelsea",
-    "tla": "CHE",
-    "venue": "Stamford Bridge",
-    "website": "http://www.chelseafc.com",
-    "address": "Fulham Road London SW6 1HS",
-    "area": {
-      "id": 2072,
-      "name": "England"
-    },
-    "clubColors": "Royal Blue / White",
-    "crestUrl": "https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg",
-    "email": "no data",
-    "founded": 1905,
-    "lastUpdated": "2020-05-14T02:41:41Z"
   },
   {
     "id": 62,
@@ -66,7 +28,7 @@
     "website": "http://www.evertonfc.com",
     "address": "Goodison Park Liverpool L4 4EL",
     "area": {
-      "id": 2072,
+      "id": 0,
       "name": "England"
     },
     "clubColors": "Blue / White",
@@ -85,7 +47,7 @@
     "website": "http://www.liverpoolfc.tv",
     "address": "Anfield Road Liverpool L4 OTH",
     "area": {
-      "id": 2072,
+      "id": 0,
       "name": "England"
     },
     "clubColors": "Red / White",
@@ -104,7 +66,7 @@
     "website": "https://www.mancity.com",
     "address": "SportCity Manchester M11 3FF",
     "area": {
-      "id": 2072,
+      "id": 0,
       "name": "England"
     },
     "clubColors": "Sky Blue / White",
@@ -123,7 +85,7 @@
     "website": "http://www.manutd.com",
     "address": "Sir Matt Busby Way Manchester M16 0RA",
     "area": {
-      "id": 2072,
+      "id": 0,
       "name": "England"
     },
     "clubColors": "Red / White",
@@ -135,14 +97,14 @@
   {
     "id": 67,
     "name": "Newcastle United FC",
-    "phone": "no data",
+    "phone": "Team phone",
     "shortName": "Newcastle",
     "tla": "NEW",
     "venue": "St. James' Park",
     "website": "http://www.nufc.co.uk",
     "address": "Sports Direct Arena Newcastle upon Tyne NE1 4ST",
     "area": {
-      "id": 2072,
+      "id": 0,
       "name": "England"
     },
     "clubColors": "Black / White",
@@ -154,14 +116,14 @@
   {
     "id": 68,
     "name": "Norwich City FC",
-    "phone": "no data",
+    "phone": "Team phone",
     "shortName": "Norwich",
     "tla": "NOR",
     "venue": "Carrow Road",
     "website": "http://www.canaries.co.uk",
     "address": "Carrow Road Norwich NR1 1JE",
     "area": {
-      "id": 2072,
+      "id": 0,
       "name": "England"
     },
     "clubColors": "Yellow / Green",
@@ -180,7 +142,7 @@
     "website": "http://www.tottenhamhotspur.com",
     "address": "Bill Nicholson Way, 748 High Road London N17 OAP",
     "area": {
-      "id": 2072,
+      "id": 0,
       "name": "England"
     },
     "clubColors": "Navy Blue / White",
@@ -199,7 +161,7 @@
     "website": "http://www.wolves.co.uk",
     "address": "Waterloo Road Wolverhampton WV1 4QR",
     "area": {
-      "id": 2072,
+      "id": 0,
       "name": "England"
     },
     "clubColors": "Black / Gold",
@@ -218,7 +180,7 @@
     "website": "http://www.burnleyfootballclub.com",
     "address": "Harry Potts Way Burnley BB10 4BX",
     "area": {
-      "id": 2072,
+      "id": 0,
       "name": "England"
     },
     "clubColors": "Claret / Sky Blue",
@@ -237,26 +199,26 @@
     "website": "http://www.lcfc.com",
     "address": "The Walkers Stadium, Filbert Way Leicester LE2 7FL",
     "area": {
-      "id": 2072,
+      "id": 0,
       "name": "England"
     },
     "clubColors": "Royal Blue / White",
     "crestUrl": "https://upload.wikimedia.org/wikipedia/en/2/2d/Leicester_City_crest.svg",
-    "email": "no data",
+    "email": "example@gmail.com",
     "founded": 1884,
     "lastUpdated": "2020-05-14T02:42:16Z"
   },
   {
     "id": 340,
     "name": "Southampton FC",
-    "phone": "no data",
+    "phone": "Team phone",
     "shortName": "Southampton",
     "tla": "SOU",
     "venue": "St. Mary's Stadium",
     "website": "http://www.saintsfc.co.uk",
     "address": "Britannia Road Southampton SO14 5FP",
     "area": {
-      "id": 2072,
+      "id": 0,
       "name": "England"
     },
     "clubColors": "Red / White / Black",
@@ -268,14 +230,14 @@
   {
     "id": 346,
     "name": "Watford FC",
-    "phone": "no data",
+    "phone": "Team phone",
     "shortName": "Watford",
     "tla": "WAT",
     "venue": "Vicarage Road Stadium",
     "website": "http://www.watfordfc.com",
     "address": "Vicarage Road Watford WD18 0ER",
     "area": {
-      "id": 2072,
+      "id": 0,
       "name": "England"
     },
     "clubColors": "Yellow / Black",
@@ -294,7 +256,7 @@
     "website": "http://www.cpfc.co.uk",
     "address": "Whitehorse Lane London SE25 6PU",
     "area": {
-      "id": 2072,
+      "id": 0,
       "name": "England"
     },
     "clubColors": "Red / Blue",
@@ -313,33 +275,14 @@
     "website": "http://www.sufc.co.uk",
     "address": "Bramall Lane Sheffield, Yorkshire S2 4SU",
     "area": {
-      "id": 2072,
+      "id": 0,
       "name": "England"
     },
     "clubColors": "Red / White / Black",
     "crestUrl": "https://upload.wikimedia.org/wikipedia/en/9/9c/Sheffield_United_FC_logo.svg",
     "email": "info@sufc.co.uk",
-    "founded": "no data",
+    "founded": 0,
     "lastUpdated": "2020-05-14T02:42:36Z"
-  },
-  {
-    "id": 397,
-    "name": "Brighton & Hove Albion FC",
-    "phone": "+44 (01273) 878288",
-    "shortName": "Brighton Hove",
-    "tla": "BHA",
-    "venue": "The American Express Community Stadium",
-    "website": "http://www.seagulls.co.uk",
-    "address": "44 North Road Brighton & Hove BN1 1YR",
-    "area": {
-      "id": 2072,
-      "name": "England"
-    },
-    "clubColors": "Blue / White",
-    "crestUrl": "https://upload.wikimedia.org/wikipedia/en/f/fd/Brighton_%26_Hove_Albion_logo.svg",
-    "email": "seagulls@bhafc.co.uk",
-    "founded": 1898,
-    "lastUpdated": "2020-05-14T02:43:01Z"
   },
   {
     "id": 563,
@@ -351,7 +294,7 @@
     "website": "http://www.whufc.com",
     "address": "Green Street, Upton Park London E13 9AZ",
     "area": {
-      "id": 2072,
+      "id": 0,
       "name": "England"
     },
     "clubColors": "Claret / Sky Blue",
@@ -370,7 +313,7 @@
     "website": "http://www.afcb.co.uk",
     "address": "Dean Court, Kings Park Bournemouth BH7 7AF",
     "area": {
-      "id": 2072,
+      "id": 0,
       "name": "England"
     },
     "clubColors": "Red / Black",
@@ -380,8 +323,8 @@
     "lastUpdated": "2020-05-14T02:43:14Z"
   },
   {
-    "id": 1046,
-    "name": "Team Name",
+    "id": 1045,
+    "name": "Belgrano",
     "phone": "Team phone",
     "shortName": "Team shortname",
     "tla": "tla",
@@ -390,31 +333,12 @@
     "address": "",
     "area": {
       "id": 0,
-      "name": "Team location"
+      "name": "Argentina"
     },
     "clubColors": "Team colors",
-    "crestUrl": "https://via.placeholder.com/300",
+    "crestUrl": "/uploads/images/2c93906517c65bf1062cea16875d8245",
     "email": "example@gmail.com",
-    "founded": 0,
-    "lastUpdated": "Data last updated.."
-  },
-  {
-    "id": 1047,
-    "name": "Team Name",
-    "phone": "Team phone",
-    "shortName": "Team shortname",
-    "tla": "tla",
-    "venue": "Team venue",
-    "website": "https://placeholder.com/",
-    "address": "",
-    "area": {
-      "id": 0,
-      "name": "Team location"
-    },
-    "clubColors": "Team colors",
-    "crestUrl": "https://via.placeholder.com/300",
-    "email": "example@gmail.com",
-    "founded": 0,
+    "founded": "0",
     "lastUpdated": "Data last updated.."
   }
 ]

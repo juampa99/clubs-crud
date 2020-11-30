@@ -4,6 +4,7 @@ import multer from 'multer';
 import exphbs from 'express-handlebars';
 import {loadTeams, saveTeams} from "./services";
 import Team from "./entities/Team";
+import TeamList from "./entities/TeamList";
 
 const upload = multer({dest: './public/uploads/images'});
 const PORT : number = 8080;
@@ -11,10 +12,12 @@ const hbs = exphbs.create();
 
 const app = express();
 
+let on : boolean = true;
+
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
-let teams : Team[] = loadTeams(false);
+let teams : TeamList = loadTeams(false);
 
 app.use(express.urlencoded({extended: true}))
 
@@ -23,20 +26,20 @@ app.use(express.json());
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', (req , res  )=>{
+    const rawTeamList = teams.getRawList();
+
     res.render('home', {
         layout: 'main_layout',
         data:{
-            teams
+            rawTeamList
         }
     })
 });
 
 app.get('/team/:id', (req, res)=>{
-    let filteredTeams = teams.filter(t=>t.id == Number(req.params.id));
-    let team = undefined;
-    if(filteredTeams != null && filteredTeams.length != 0)
-        team = filteredTeams[0];
-    else {
+    let team = teams.getTeamById(Number(req.params.id));
+
+    if(!team) {
         res.status(404).send('<h1 style="text-align: center;">404 Not found</h1>')
         return;
     }
@@ -53,20 +56,17 @@ app.get('/team/:id/edit', (req, res)=>{
     let id = req.params.id;
     let team = undefined;
     if(id === 'new'){
-        let newId = teams[teams.length-1].id + 1;
+        let newId = teams.getTail().id + 1;
         team = new Team({id: newId});
-        teams.push(team);
+        teams.pushTeam(team);
     }
     else{
-        let filteredTeams = teams.filter(t=>t.id == Number(id));
-        if(filteredTeams != null && filteredTeams.length != 0)
-            team = filteredTeams[0];
-        else {
+        team = teams.getTeamById(Number(id));
+        if(!team){
             res.status(404).send('<h1 style="text-align: center;">404 Not found</h1>')
             return;
         }
     }
-
 
     res.render('team_edit', {
         layout: 'main_layout',
@@ -77,21 +77,19 @@ app.get('/team/:id/edit', (req, res)=>{
 });
 
 app.get('/delete/:id', (req, res)=>{
-    teams.forEach((team, i)=> {
-        if (team.id == Number(req.params.id))
-            teams.splice(i, 1);
-    })
+    teams.popTeamById(Number(req.params.id));
     res.redirect('/');
 })
 
 app.post('/submit-team/:id', upload.single('image'), (req,res)=>{
-    let team = teams.filter(t=>t.id == Number(req.params.id))[0];
-    if(!team.area)
-        team.area = {name: 'Team location', id: -1}
-    team.area.name = req.body.location
-    Object.assign(team, req.body);
-    if(req.file)
-        team.crestUrl = '/uploads/images/'+req.file.filename
+    let team = teams.getTeamById(Number(req.params.id));
+
+    if(team) {
+        Object.assign(team, req.body);
+        if(req.file)
+            team.crestUrl = '/uploads/images/' + req.file.filename
+    }
+
     res.redirect('/');
 })
 
@@ -107,11 +105,15 @@ app.get('/reset-data', (req,res)=>{
 
 // Saves data from teams array to data/teams.json
 function cleanup(){
-    console.log('Saving data..')
+    if(on){ // This avoids concurrency problems
+        on = false;
+        console.log('Saving data..')
 
-    saveTeams(teams);
+        saveTeams(teams);
 
-    console.log('Exiting..')
+        console.log('Exiting..')
+        process.exit(0);
+    }
     process.exit(0);
 }
 

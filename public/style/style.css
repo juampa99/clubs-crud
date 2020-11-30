@@ -79,6 +79,10 @@ body{
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top:0;
+    -webkit-box-shadow: 5px 5px 11px 5px rgba(0,0,0,0.52);
+    box-shadow: 5px 5px 11px 5px rgba(0,0,0,0.52);
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
 }
 
 ul{

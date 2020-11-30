@@ -3,7 +3,7 @@ import Team from "../entities/Team";
 function mapTeam(data : TeamData): Team{
     return new Team({
         id: data.id,
-        area: { id: data.area.id, name: data.area.name },
+        location: data.area.name,
         name: data.name,
         shortName: data.shortName,
         tla: data.tla,
@@ -29,7 +29,7 @@ function unmapTeam(team: Team) : TeamData{
         venue: team.venue,
         website: team.website,
         address: team.address,
-        area: { id: team.area.id, name: team.area.name },
+        area: { id: 0, name: team.location },
         clubColors: team.clubColors,
         crestUrl: team.crestUrl,
         email: team.email,
