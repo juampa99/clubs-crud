@@ -12,8 +12,6 @@ const hbs = exphbs.create();
 
 const app = express();
 
-let on : boolean = true;
-
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
@@ -53,11 +51,11 @@ app.get('/team/:id', (req, res)=>{
 });
 
 app.get('/team/:id/edit', (req, res)=>{
-    let id = req.params.id;
-    let team = undefined;
+    let id = req?.params?.id;
+    let team;
     if(id === 'new'){
-        let newId = teams.getTail().id + 1;
-        team = new Team({id: newId});
+        let newId = teams.getTail()?.id + 1;
+        team = new Team({id: newId, status: 'new'});
         teams.pushTeam(team);
     }
     else{
@@ -78,6 +76,8 @@ app.get('/team/:id/edit', (req, res)=>{
 
 app.get('/delete/:id', (req, res)=>{
     teams.popTeamById(Number(req.params.id));
+    saveTeams(teams);
+    loadTeams(false);
     res.redirect('/');
 })
 
@@ -88,7 +88,10 @@ app.post('/submit-team/:id', upload.single('image'), (req,res)=>{
         Object.assign(team, req.body);
         if(req.file)
             team.crestUrl = '/uploads/images/' + req.file.filename
+        team.status = 'done';
     }
+
+    saveTeams(teams);
 
     res.redirect('/');
 })
@@ -101,25 +104,6 @@ app.get('/reset-data', (req,res)=>{
     console.log('Done!');
 
     res.redirect('/')
-})
-
-// Saves data from teams array to data/teams.json
-function cleanup(){
-    if(on){ // This avoids concurrency problems
-        on = false;
-        console.log('Saving data..')
-
-        saveTeams(teams);
-
-        console.log('Exiting..')
-        process.exit(0);
-    }
-    process.exit(0);
-}
-
-// Executes 'cleanup()' when process is killed
-[`exit`, `SIGINT`, `SIGUSR1`, `SIGUSR2`, `uncaughtException`, `SIGTERM`].forEach((eventType) => {
-    process.on(eventType, cleanup.bind(null, eventType));
 })
 
 app.listen(PORT);

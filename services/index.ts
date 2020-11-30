@@ -12,11 +12,13 @@ function loadTeams(backup : boolean) : TeamList{
 
 function saveTeams(teamList: TeamList) : void{
     let teamDataList : TeamData[] = [];
+    let teamListCopy = teamList.copy();
     let tlLenght : number = teamList.length();
     for(let i = 0;i < tlLenght; i++){
-        let team = teamList.getHead();
-        teamDataList.push(unmapTeam(team));
-        teamList.popTeamById(team.id);
+        let team = teamListCopy.getHead();
+        if(team.status != 'new')
+            teamDataList.push(unmapTeam(team));
+        teamListCopy.popTeamById(team.id);
     }
     saveTeamData(teamDataList);
 }

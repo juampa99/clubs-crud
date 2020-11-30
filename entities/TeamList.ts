@@ -3,8 +3,8 @@ import Team from "./Team";
 export default class TeamList{
     private teamList : Team[];
 
-    constructor() {
-        this.teamList = [];
+    constructor(tl ?: Team[]) {
+        this.teamList = tl ? tl : [];
     }
 
     private sortList() : void{
@@ -37,6 +37,10 @@ export default class TeamList{
     }
 
     public getRawList() : Team[]{
-        return this.teamList;
+        return this.teamList.filter(t=>t.status != 'new');
+    }
+
+    public copy() : TeamList{
+        return new TeamList(this.teamList)
     }
 }

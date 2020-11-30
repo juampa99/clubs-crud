@@ -13,6 +13,7 @@ export default class Team{
     public clubColors: string;
     public venue: string;
     public lastUpdated: string;
+    public status: string;
 
 
     constructor(teamData:{
@@ -29,7 +30,8 @@ export default class Team{
                     founded?: number,
                     clubColors?: string,
                     venue?: string,
-                    lastUpdated?: string
+                    lastUpdated?: string,
+                    status?: string
                 }
     ) {
         this.id = teamData.id;
@@ -46,5 +48,6 @@ export default class Team{
         this.clubColors = teamData.clubColors ? teamData.clubColors : 'Team colors';
         this.venue = teamData.venue ? teamData.venue : 'Team venue';
         this.lastUpdated = teamData.lastUpdated ? teamData.lastUpdated : 'Data last updated..';
+        this.status = teamData.status ? teamData.status : 'done'
     }
 }

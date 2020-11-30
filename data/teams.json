@@ -1,43 +1,5 @@
 [
   {
-    "id": 57,
-    "name": "Arsenal FC",
-    "phone": "+44 (020) 76195003",
-    "shortName": "Arsenal",
-    "tla": "ARS",
-    "venue": "Emirates Stadium",
-    "website": "http://www.arsenal.com",
-    "address": "75 Drayton Park London N5 1BU",
-    "area": {
-      "id": 0,
-      "name": "England"
-    },
-    "clubColors": "Red / White",
-    "crestUrl": "https://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg",
-    "email": "info@arsenal.co.uk",
-    "founded": 1886,
-    "lastUpdated": "2020-05-14T02:41:34Z"
-  },
-  {
-    "id": 62,
-    "name": "Everton FC",
-    "phone": "+44 (0871) 6631878",
-    "shortName": "Everton",
-    "tla": "EVE",
-    "venue": "Goodison Park",
-    "website": "http://www.evertonfc.com",
-    "address": "Goodison Park Liverpool L4 4EL",
-    "area": {
-      "id": 0,
-      "name": "England"
-    },
-    "clubColors": "Blue / White",
-    "crestUrl": "https://upload.wikimedia.org/wikipedia/en/7/7c/Everton_FC_logo.svg",
-    "email": "everton@evertonfc.com",
-    "founded": 1878,
-    "lastUpdated": "2020-05-14T02:41:42Z"
-  },
-  {
     "id": 64,
     "name": "Liverpool FC",
     "phone": "+44 (0844) 4993000",
@@ -93,25 +55,6 @@
     "email": "enquiries@manutd.co.uk",
     "founded": 1878,
     "lastUpdated": "2020-05-14T02:41:51Z"
-  },
-  {
-    "id": 67,
-    "name": "Newcastle United FC",
-    "phone": "Team phone",
-    "shortName": "Newcastle",
-    "tla": "NEW",
-    "venue": "St. James' Park",
-    "website": "http://www.nufc.co.uk",
-    "address": "Sports Direct Arena Newcastle upon Tyne NE1 4ST",
-    "area": {
-      "id": 0,
-      "name": "England"
-    },
-    "clubColors": "Black / White",
-    "crestUrl": "https://upload.wikimedia.org/wikipedia/en/5/56/Newcastle_United_Logo.svg",
-    "email": "admin@nufc.co.uk",
-    "founded": 1881,
-    "lastUpdated": "2020-05-14T02:41:53Z"
   },
   {
     "id": 68,
@@ -229,21 +172,21 @@
   },
   {
     "id": 346,
-    "name": "Watford FC",
+    "name": "BelgranoOwO",
     "phone": "Team phone",
     "shortName": "Watford",
     "tla": "WAT",
     "venue": "Vicarage Road Stadium",
     "website": "http://www.watfordfc.com",
-    "address": "Vicarage Road Watford WD18 0ER",
+    "address": "Belgrano owo",
     "area": {
       "id": 0,
-      "name": "England"
+      "name": "Team location"
     },
     "clubColors": "Yellow / Black",
-    "crestUrl": "https://upload.wikimedia.org/wikipedia/en/e/e2/Watford.svg",
+    "crestUrl": "/uploads/images/9f590305111df4c2a4cb8687a2ed0c45",
     "email": "yourvoice@watfordfc.com",
-    "founded": 1881,
+    "founded": "1881",
     "lastUpdated": "2020-05-14T02:42:25Z"
   },
   {
@@ -285,6 +228,25 @@
     "lastUpdated": "2020-05-14T02:42:36Z"
   },
   {
+    "id": 397,
+    "name": "Brighton & Hove Albion FC",
+    "phone": "+44 (01273) 878288",
+    "shortName": "Brighton Hove",
+    "tla": "BHA",
+    "venue": "The American Express Community Stadium",
+    "website": "http://www.seagulls.co.uk",
+    "address": "44 North Road Brighton & Hove BN1 1YR",
+    "area": {
+      "id": 0,
+      "name": "England"
+    },
+    "clubColors": "Blue / White",
+    "crestUrl": "https://upload.wikimedia.org/wikipedia/en/f/fd/Brighton_%26_Hove_Albion_logo.svg",
+    "email": "seagulls@bhafc.co.uk",
+    "founded": 1898,
+    "lastUpdated": "2020-05-14T02:43:01Z"
+  },
+  {
     "id": 563,
     "name": "West Ham United FC",
     "phone": "+44 (020) 85482794",
@@ -321,24 +283,5 @@
     "email": "admin@afcb.co.uk",
     "founded": 1890,
     "lastUpdated": "2020-05-14T02:43:14Z"
-  },
-  {
-    "id": 1045,
-    "name": "Belgrano",
-    "phone": "Team phone",
-    "shortName": "Team shortname",
-    "tla": "tla",
-    "venue": "Team venue",
-    "website": "https://placeholder.com/",
-    "address": "",
-    "area": {
-      "id": 0,
-      "name": "Argentina"
-    },
-    "clubColors": "Team colors",
-    "crestUrl": "/uploads/images/2c93906517c65bf1062cea16875d8245",
-    "email": "example@gmail.com",
-    "founded": "0",
-    "lastUpdated": "Data last updated.."
   }
 ]
