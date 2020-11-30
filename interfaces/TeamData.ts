@@ -3,7 +3,6 @@ interface TeamData{
     area: {id: number, name: string},
     name: string,
     shortName: string,
-    tla: string,
     crestUrl: string,
     address: string,
     phone: string,

@@ -3,7 +3,6 @@ export default class Team{
     public location: string;
     public name: string;
     public shortName: string;
-    public tla: string;
     public crestUrl: string;
     public address: string;
     public phone: string;
@@ -21,7 +20,6 @@ export default class Team{
                     location?: string,
                     name?: string,
                     shortName?: string,
-                    tla?: string,
                     crestUrl?: string,
                     address?: string,
                     phone?: string,
@@ -38,7 +36,6 @@ export default class Team{
         this.location = teamData.location ? teamData.location : 'Team location';
         this.name = teamData.name ? teamData.name : 'Team Name';
         this.shortName = teamData.shortName ? teamData.shortName : 'Team shortname';
-        this.tla = teamData.tla ? teamData.tla : 'tla';
         this.crestUrl = teamData.crestUrl ? teamData.crestUrl : 'https://via.placeholder.com/300';
         this.address = teamData.address ? teamData.address : '';
         this.phone = teamData.phone ? teamData.phone : 'Team phone';
