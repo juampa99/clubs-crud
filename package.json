@@ -22,7 +22,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "nodemon": "./node_modules/nodemon/bin/nodemon.js index.js",
-    "tsc": "tsc --watch"
+    "tsc": "tsc",
+    "tscw": "tsc --watch",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",

@@ -9,6 +9,13 @@ body{
     box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.28);
 }
 
+.neumorphism {
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #343a40,
+    -20px -20px 60px #343a40;
+}
+
 #imageContainer{
     box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.28);
     margin-right: auto;
@@ -89,3 +96,11 @@ ul{
     list-style-type: none;
 }
 
+
+.nav-item {
+    margin-right: 15px;
+}
+
+.nav-link {
+    color: black;
+}
